@@ -1,0 +1,160 @@
+<html>
+    <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>PROJECT2</title>
+    <style>
+        body{
+            background:rgba(0,0,50,0.2);
+            border:solid black 5px;
+            
+        }
+        #title{
+            font-size: 50px;
+        }
+        #description{
+            font-size:25px;
+            padding-left: 20px;
+        }
+        #survey-form{
+            margin-left: 150px;
+            margin-right:200px;
+        
+        }
+        #name-label,#email-label,#comment{
+            font-size:25px;
+            padding-left:40px;
+            display: inline-block;
+            padding-top:20px;
+        }
+        #name,#email,#number{
+            border: solid black 2px;
+            width:500px;
+            padding:5px;
+            height: 40px;
+            margin:10px 0px 0px 60px;
+            font-size: 20px;
+        }
+        #submit:hover{
+            border:solid black 2px;
+            background-color: cyan;
+        }
+        #text{            
+             border: solid black 1px;
+            padding:10px;
+            margin:-20px 0px 0px 200px;
+            font-size: 20px;
+            background-color:bisque;
+            
+            
+        }
+        #gender{
+            width:500px;
+            padding:5px;
+            height: 40px;
+            margin:-35px 0px 0px 200px;
+            font-size: 30px;
+        }
+        #check{
+            width:500px;
+            padding:5px;
+            height: 40px;
+            margin:-35px 0px 0px 200px;
+            font-size: 30px;
+ 
+        }
+        #occ{
+        
+            border: solid black 2px;
+            width:500px;
+            padding:5px;
+            height: 40px;
+            margin:10px 0px 0px 20px;
+            font-size: 20px;
+  
+        }
+        #number-label{
+            font-size:25px;
+            padding-left:60px;
+            display: inline-block;
+            padding-top:20px;    
+        }
+        #dropdown,#checkbox{
+           font-size:25px;
+            padding-left:0px;
+            display: inline-block;
+            padding-top:20px;
+ 
+        }
+        #radio{
+         font-size:25px;
+            padding-left:20px;
+            display: inline-block;
+            padding-top:20px;
+   
+        }
+        
+        
+    
+    
+    </style>
+    
+    
+    </head>
+<body>
+    <h1 id="title"><center><B>SIGN UP FORM</B></center></h1>
+    <p id="description">Ensure that all information is complete and legible! </p>
+    <form  id="survey-form" style="background-color: rgba(255,0,0,0.1);height: 800px ;width: 1000px;border:5px solid black">
+    <label id="name-label" for="name"> NAME  :</label>
+        <input type="text" id="name" placeholder="enter your name" name="name" required>
+        <br>
+        <label id="email-label" for="email">EMAIL:</label>
+        <input type="email" id="email" placeholder="enter your email" name="email" required>
+        <br>
+
+        <label id="number-label" for="number">AGE :    </label>
+        <input type="number" id="number" placeholder="enter your age" name="number" min="20" max="100" required>
+        <br>
+        <label id="dropdown">OCCUPATION:</label>
+        <select id="occ">
+            <option value="select">select</option>
+        <option value="business">business</option>
+        <option value="engineer">engineer</option>
+            <option value="dentist">dentist</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+        <label id="radio">GENDER:</label>
+        <div id="gender">
+        <input type="radio" name="gender" id="rd1" value="male">male
+            <input type="radio" name="gender" id="rd2" value="female">female
+            <input type="radio" name="gender" id="rd3" value="other">other
+            </div>
+        <br>
+        <label id="checkbox">INTERESTED IN:</label>
+        <div id="check">
+        <input type="checkbox" name="lang1" value="C">C
+        <input type="checkbox" name="lang2" value="C++">C++
+        <input type="checkbox" name="lang3" value="JAVA">JAVA
+        <input type="checkbox" name="lang4" value="PYHTON">PYTHON
+        </div>
+        <br>
+        <label id="comment">COMMENT:</label>
+        <div>
+        <textarea id="text" rows="6" cols="35" placeholder="enter comments here...">
+            </textarea>
+        </div>
+        <br>
+      <center><button type="submit" class="btn btn-danger" id="submit">SUBMIT</button></center>  
+ 
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
